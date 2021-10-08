@@ -21,7 +21,6 @@ export const Modal = forwardRef<HTMLElement, ModalProps>(
       <Box is='dialog' rcx-modal {...props}>
         <Box
           is={is}
-          {...(is === 'form' && { action: '#' })}
           onSubmit={_onSubmit}
           ref={ref}
           rcx-modal__inner
